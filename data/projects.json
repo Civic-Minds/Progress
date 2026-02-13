@@ -1,0 +1,270 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ontario Line",
+                "agency": "Metrolinx",
+                "category": "Subway",
+                "status": "construction",
+                "statusText": "Under Construction",
+                "timeline": "Expected completion: 2031",
+                "description": "A 15.6-kilometre stand-alone rapid transit line that will connect the Ontario Science Centre to Exhibition/Ontario Place.",
+                "color": "#0072bc",
+                "milestones": [
+                    "Early works started (2022)",
+                    "Major construction commenced (2023)"
+                ],
+                "source_url": "https://www.metrolinx.com/en/projects-and-programs/ontario-line"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-79.418, 43.633],
+                    [-79.395, 43.645],
+                    [-79.379, 43.653],
+                    [-79.360, 43.658],
+                    [-79.345, 43.665],
+                    [-79.340, 43.685],
+                    [-79.335, 43.715]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Eglinton Crosstown LRT",
+                "agency": "TTC",
+                "category": "LRT",
+                "status": "opened",
+                "statusText": "Recently Opened",
+                "timeline": "Opened February 8, 2026",
+                "description": "A 19-kilometre light rail transit line across Eglinton Avenue from Mount Dennis to Kennedy Station.",
+                "color": "#ef3e42",
+                "milestones": [
+                    "Construction started (2011)",
+                    "Substantial completion (Dec 2025)",
+                    "Officially opened (Feb 8, 2026)"
+                ],
+                "source_url": "https://www.ttc.ca/about-the-ttc/projects-and-plans/Eglinton-Crosstown-LRT"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-79.485, 43.688],
+                    [-79.444, 43.700],
+                    [-79.398, 43.705],
+                    [-79.344, 43.716],
+                    [-79.263, 43.732]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Scarborough Subway Extension",
+                "agency": "Metrolinx",
+                "category": "Subway",
+                "status": "construction",
+                "statusText": "Under Construction",
+                "timeline": "Expected completion: 2030",
+                "description": "A 7.8-kilometre extension of TTC Line 2 Bloor-Danforth from Kennedy Station to Sheppard Avenue East.",
+                "color": "#00923f",
+                "milestones": [
+                    "Early works started (2021)",
+                    "Tunneling started (2022)"
+                ],
+                "source_url": "https://www.metrolinx.com/en/projects-and-programs/scarborough-subway-extension"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-79.263, 43.732],
+                    [-79.255, 43.755],
+                    [-79.245, 43.775],
+                    [-79.235, 43.795]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Yonge North Subway Extension",
+                "agency": "Metrolinx",
+                "category": "Subway",
+                "status": "approved",
+                "statusText": "Approved",
+                "timeline": "Expected completion: 2030",
+                "description": "An 8-kilometre extension of TTC Line 1 Yonge-University from Finch Station to Richmond Hill Centre.",
+                "color": "#ffcb00",
+                "milestones": [
+                    "Preliminary design complete",
+                    "Awaiting contract award"
+                ],
+                "source_url": "https://www.metrolinx.com/en/projects-and-programs/yonge-north-subway-extension"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-79.414, 43.781],
+                    [-79.418, 43.801],
+                    [-79.426, 43.821],
+                    [-79.428, 43.841]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Finch West LRT",
+                "agency": "TTC",
+                "category": "LRT",
+                "status": "opened",
+                "statusText": "Recently Opened",
+                "timeline": "Opened December 7, 2025",
+                "description": "An 11-kilometre light rail transit line on Finch Avenue West from Humber College to Finch West Station.",
+                "color": "#808080",
+                "milestones": [
+                    "Main construction started (2019)",
+                    "Vehicle testing complete (2024)",
+                    "Opened (Dec 2025)"
+                ],
+                "source_url": "https://www.metrolinx.com/en/projects-and-programs/finch-west-lrt"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-79.605, 43.729],
+                    [-79.545, 43.745],
+                    [-79.487, 43.761]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Eglinton Crosstown West Extension",
+                "agency": "Metrolinx",
+                "category": "LRT",
+                "status": "construction",
+                "statusText": "Under Construction",
+                "timeline": "Expected completion: 2031",
+                "description": "A 9.2-kilometre extension of the Eglinton Crosstown LRT from Mount Dennis to Renforth Drive.",
+                "color": "#ef3e42",
+                "milestones": [
+                    "Tunneling started (2022)",
+                    "Elevated guide-way construction (Ongoing)"
+                ],
+                "source_url": "https://www.metrolinx.com/en/projects-and-programs/eglinton-crosstown-west-extension"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-79.485, 43.688],
+                    [-79.525, 43.685],
+                    [-79.555, 43.675],
+                    [-79.595, 43.665]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Waterfront East LRT",
+                "agency": "City of Toronto",
+                "category": "LRT",
+                "status": "planning",
+                "statusText": "Planning",
+                "timeline": "In design 2024-2026",
+                "description": "Proposed LRT extension from Union Station to the East Bayfront and future Port Lands redevelopment.",
+                "color": "#0072bc",
+                "milestones": [
+                    "10% design complete",
+                    "Funding commitment from City (Ongoing)"
+                ],
+                "source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/transit-projects/waterfront-east-light-rail-transit/"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-79.378, 43.646],
+                    [-79.370, 43.640],
+                    [-79.360, 43.645],
+                    [-79.345, 43.648]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "GO Expansion (Lakeshore East)",
+                "agency": "Metrolinx",
+                "category": "GO",
+                "status": "planning",
+                "statusText": "Planning",
+                "timeline": "Ongoing",
+                "description": "Two-way, all-day service every 15 minutes or better on core segments of the GO network.",
+                "color": "#00853e",
+                "milestones": [
+                    "Electrification contracts awarded",
+                    "New third track construction (Ongoing)"
+                ],
+                "source_url": "https://www.metrolinx.com/en/projects-and-programs/go-expansion"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-79.378, 43.646],
+                    [-79.350, 43.660],
+                    [-79.263, 43.732],
+                    [-79.120, 43.830]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bloor-Yonge Capacity Improvement",
+                "agency": "TTC",
+                "category": "Station",
+                "status": "construction",
+                "statusText": "Under Construction",
+                "timeline": "Expected completion: 2030",
+                "description": "Major expansion of Toronto's busiest interchange station to improve passenger flow.",
+                "color": "#004a99",
+                "milestones": [
+                    "Preliminary work started (2024)",
+                    "Platform expansion (Upcoming)"
+                ],
+                "source_url": "https://www.ttc.ca/about-the-ttc/projects-and-plans/Bloor-Yonge-Station-Capacity-Improvement"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-79.385, 43.670]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Exhibition Station Hub",
+                "agency": "Metrolinx",
+                "category": "Station",
+                "status": "construction",
+                "statusText": "Under Construction",
+                "timeline": "Connecting GO and Ontario Line",
+                "description": "Major transit hub serving Exhibition Place and future Ontario Line.",
+                "color": "#0072bc",
+                "milestones": [
+                    "New north platform construction",
+                    "Ontario Line early works"
+                ],
+                "source_url": "https://www.metrolinx.com/en/projects-and-programs/ontario-line/exhibition-station"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-79.418, 43.633]
+            }
+        }
+    ]
+}

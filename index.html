@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transit Progress | GTA</title>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="map"></div>
+
+    <div id="sidebar" class="sidebar hidden">
+        <button id="close-sidebar" class="close-btn">&times;</button>
+        <div id="sidebar-content">
+            <h1 id="project-name">Transit Progress</h1>
+            <div id="filter-container" class="filter-group">
+                <select id="agency-filter">
+                    <option value="all">All Agencies</option>
+                    <option value="TTC">TTC</option>
+                    <option value="Metrolinx">Metrolinx</option>
+                    <option value="City of Toronto">City of Toronto</option>
+                </select>
+                <select id="status-filter">
+                    <option value="all">All Statuses</option>
+                    <option value="opened">Recently Opened</option>
+                    <option value="construction">Under Construction</option>
+                    <option value="approved">Approved</option>
+                    <option value="planning">Planning</option>
+                </select>
+            </div>
+            <div id="project-list" class="project-list">
+                <!-- Project list items will be injected here -->
+            </div>
+            <div id="project-details-view" class="details-view hidden">
+                <div id="project-status" class="status-badge">Select a project</div>
+                <div id="project-details">
+                    <p id="project-description">Click on a project to see more details.</p>
+                    <div id="project-milestones" class="milestones-list"></div>
+                    <div id="project-timeline" class="timeline"></div>
+                    <a id="project-link" href="#" target="_blank" class="external-link hidden">Official Project Page</a>
+                </div>
+                <button id="back-to-list" class="secondary-btn">Back to List</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="legend" class="legend hidden">
+        <h4>Status</h4>
+        <div><span class="status-planning-dot" style="background-color: #4CAF50;"></span> Planning</div>
+        <div><span class="status-approved-dot" style="background-color: #2196F3;"></span> Approved</div>
+        <div><span class="status-construction-dot" style="background-color: #FF9800;"></span> Construction</div>
+        <div><span class="status-opened-dot" style="background-color: #ef3e42;"></span> Recently Opened</div>
+        <div><span class="status-delayed-dot" style="background-color: #F44336;"></span> Delayed</div>
+    </div>
+
+    <div id="token-prompt" class="token-overlay">
+        <div class="token-modal">
+            <h2>Activate Map</h2>
+            <p>Please enter your Mapbox Access Token to view the interactive transit map.</p>
+            <input type="text" id="token-input"
+                placeholder="pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZnd3IifQ.ocUrlS_8G9GrS_asV6fsgA">
+            <button id="token-submit">Launch Map</button>
+            <p class="token-hint">Don't have one? Get it at <a href="https://mapbox.com" target="_blank">mapbox.com</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
