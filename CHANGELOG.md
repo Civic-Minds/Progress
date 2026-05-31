@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.1] - 2026-05-31
+
+### Changed
+- Simplified the atlas layout into a softer paper-style presentation.
+- Removed the agency filter and agency badges from the sidebar.
+- Added a sidebar reopen control after closing the panel.
+
+### Fixed
+- Corrected the token placeholder to avoid secret-scanning issues.
+- Updated Finch West LRT and Eglinton Crosstown LRT to recently opened status.
+
 ## [1.2.0] - 2026-05-31
 
 ### Added
