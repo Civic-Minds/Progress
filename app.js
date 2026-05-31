@@ -140,7 +140,7 @@ function simplifyBaseMap() {
     style.layers.forEach(layer => {
         if (layer.type === 'background') {
             map.setPaintProperty(layer.id, 'background-color', MAP_BACKGROUND_COLOR);
-        } else {
+        } else if (layer.type === 'symbol' || layer.id.includes('label')) {
             map.setLayoutProperty(layer.id, 'visibility', 'none');
         }
     });

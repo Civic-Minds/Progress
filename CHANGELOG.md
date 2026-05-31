@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.2] - 2026-05-31
+
+### Fixed
+- Restored visible map context by keeping non-label basemap layers on screen.
+- Improved the atlas so transit lines and markers read against the paper-style background.
+
 ## [1.2.1] - 2026-05-31
 
 ### Changed
