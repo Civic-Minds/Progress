@@ -18,6 +18,10 @@ const tokenPrompt = document.getElementById('token-prompt');
 const tokenInput = document.getElementById('token-input');
 const tokenSubmit = document.getElementById('token-submit');
 
+const DEFAULT_TITLE = 'Transit Construction';
+const STATUS_ORDER = ['planning', 'approved', 'construction', 'opened', 'delayed'];
+const MAP_BACKGROUND_COLOR = '#f8f1e6';
+
 let map;
 let allProjects = [];
 let markers = [];
@@ -43,6 +47,7 @@ async function fetchProjects() {
         const response = await fetch('data/projects.json');
         const data = await response.json();
         allProjects = data.features;
+        populateFilters(allProjects);
         renderProjectList(allProjects);
         updateMapData(data);
     } catch (error) {
@@ -57,11 +62,12 @@ function initializeMap(token) {
     map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/light-v11',
-        center: [-79.3832, 43.6532], // Toronto
-        zoom: 11
+        center: [-98.5, 39.5], // North America
+        zoom: 3
     });
 
     map.on('load', () => {
+        simplifyBaseMap();
         fetchProjects();
 
         // Show UI elements
@@ -81,10 +87,11 @@ function initializeMap(token) {
             'layout': { 'line-join': 'round', 'line-cap': 'round' },
             'paint': {
                 'line-color': ['get', 'color'],
-                'line-width': 4,
-                'line-opacity': 0.8
+                'line-width': 2.5,
+                'line-opacity': 0.85,
+                'line-dasharray': [1.2, 2.2]
             },
-            'filter': ['==', '$type', 'LineString']
+            'filter': ['in', '$type', 'LineString', 'MultiLineString']
         });
 
         map.addLayer({
@@ -94,10 +101,10 @@ function initializeMap(token) {
             'layout': { 'line-join': 'round', 'line-cap': 'round' },
             'paint': {
                 'line-color': ['get', 'color'],
-                'line-width': 8,
-                'line-opacity': 0.3
+                'line-width': 7,
+                'line-opacity': 0.25
             },
-            'filter': ['all', ['==', '$type', 'LineString'], ['==', 'name', '']]
+            'filter': ['all', ['in', '$type', 'LineString', 'MultiLineString'], ['==', 'name', '']]
         });
 
         map.on('click', 'transit-lines', (e) => {
@@ -115,9 +122,24 @@ function initializeMap(token) {
     });
 }
 
+function simplifyBaseMap() {
+    if (!map) return;
+    const style = map.getStyle();
+    if (!style || !style.layers) return;
+
+    style.layers.forEach(layer => {
+        if (layer.type === 'background') {
+            map.setPaintProperty(layer.id, 'background-color', MAP_BACKGROUND_COLOR);
+        } else {
+            map.setLayoutProperty(layer.id, 'visibility', 'none');
+        }
+    });
+}
+
 function updateMapData(data) {
     if (!map) return;
     map.getSource('transit-projects').setData(data);
+    fitMapToData(data);
 
     // Clear existing markers
     markers.forEach(m => m.remove());
@@ -140,6 +162,69 @@ function updateMapData(data) {
 
             markers.push(marker);
         }
+    });
+}
+
+function fitMapToData(data) {
+    if (!data || !data.features || !data.features.length) return;
+    const bounds = new mapboxgl.LngLatBounds();
+    let hasCoords = false;
+
+    data.features.forEach(feature => {
+        if (!feature.geometry) return;
+        if (feature.geometry.type === 'Point') {
+            bounds.extend(feature.geometry.coordinates);
+            hasCoords = true;
+        } else if (feature.geometry.type === 'LineString') {
+            feature.geometry.coordinates.forEach(coord => bounds.extend(coord));
+            hasCoords = true;
+        } else if (feature.geometry.type === 'MultiLineString') {
+            feature.geometry.coordinates.forEach(line =>
+                line.forEach(coord => bounds.extend(coord))
+            );
+            hasCoords = true;
+        }
+    });
+
+    if (hasCoords) {
+        map.fitBounds(bounds, { padding: 70, maxZoom: 6 });
+    }
+}
+
+function populateFilters(projects) {
+    const agencies = Array.from(
+        new Set(projects.map(p => p.properties.agency).filter(Boolean))
+    ).sort();
+
+    agencyFilter.innerHTML = '<option value="all">All Agencies</option>';
+    agencies.forEach(agency => {
+        const option = document.createElement('option');
+        option.value = agency;
+        option.textContent = agency;
+        agencyFilter.appendChild(option);
+    });
+
+    const statusMap = new Map();
+    projects.forEach(project => {
+        const status = project.properties.status;
+        if (status) {
+            statusMap.set(status, project.properties.statusText || status);
+        }
+    });
+
+    const sortedStatuses = Array.from(statusMap.keys()).sort((a, b) => {
+        const rankA = STATUS_ORDER.includes(a) ? STATUS_ORDER.indexOf(a) : Number.MAX_SAFE_INTEGER;
+        const rankB = STATUS_ORDER.includes(b) ? STATUS_ORDER.indexOf(b) : Number.MAX_SAFE_INTEGER;
+        if (rankA !== rankB) return rankA - rankB;
+        return a.localeCompare(b);
+    });
+
+    statusFilter.innerHTML = '<option value="all">All Statuses</option>';
+    sortedStatuses.forEach(status => {
+        const option = document.createElement('option');
+        option.value = status;
+        option.textContent = statusMap.get(status);
+        statusFilter.appendChild(option);
     });
 }
 
@@ -202,7 +287,7 @@ function showProjectDetails(props) {
     sidebar.classList.add('open');
 
     if (map) {
-        map.setFilter('transit-lines-hover', ['all', ['==', '$type', 'LineString'], ['==', 'name', props.name]]);
+        map.setFilter('transit-lines-hover', ['all', ['in', '$type', 'LineString', 'MultiLineString'], ['==', 'name', props.name]]);
     }
 }
 
@@ -220,7 +305,7 @@ function applyFilters() {
 
     // Update map visibility via filter
     if (map) {
-        const lineFilters = ['all', ['==', '$type', 'LineString']];
+        const lineFilters = ['all', ['in', '$type', 'LineString', 'MultiLineString']];
         if (agency !== 'all') lineFilters.push(['==', 'agency', agency]);
         if (status !== 'all') lineFilters.push(['==', 'status', status]);
         map.setFilter('transit-lines', lineFilters);
@@ -244,32 +329,40 @@ function applyFilters() {
 
 function flyToProject(project) {
     if (!map) return;
-    const coords = project.geometry.type === 'Point'
-        ? project.geometry.coordinates
-        : project.geometry.coordinates[0]; // Just fly to first point of line for now
+    if (project.geometry.type === 'LineString') {
+        const bounds = new mapboxgl.LngLatBounds();
+        project.geometry.coordinates.forEach(coord => bounds.extend(coord));
+        map.fitBounds(bounds, { padding: 80, maxZoom: 11 });
+        return;
+    }
+    if (project.geometry.type === 'MultiLineString') {
+        const bounds = new mapboxgl.LngLatBounds();
+        project.geometry.coordinates.forEach(line =>
+            line.forEach(coord => bounds.extend(coord))
+        );
+        map.fitBounds(bounds, { padding: 80, maxZoom: 11 });
+        return;
+    }
 
-    map.flyTo({
-        center: coords,
-        zoom: 13,
-        essential: true
-    });
+    const coords = project.geometry.coordinates;
+    map.flyTo({ center: coords, zoom: 12, essential: true });
 }
 
 agencyFilter.addEventListener('change', applyFilters);
 statusFilter.addEventListener('change', applyFilters);
 
 backBtn.addEventListener('click', () => {
-    projectName.textContent = 'Transit Progress';
+    projectName.textContent = DEFAULT_TITLE;
     projectList.classList.remove('hidden');
     detailsView.classList.add('hidden');
     if (map) {
-        map.setFilter('transit-lines-hover', ['all', ['==', '$type', 'LineString'], ['==', 'name', '']]);
+        map.setFilter('transit-lines-hover', ['all', ['in', '$type', 'LineString', 'MultiLineString'], ['==', 'name', '']]);
     }
 });
 
 closeBtn.addEventListener('click', () => {
     sidebar.classList.remove('open');
     if (map) {
-        map.setFilter('transit-lines-hover', ['all', ['==', '$type', 'LineString'], ['==', 'name', '']]);
+        map.setFilter('transit-lines-hover', ['all', ['in', '$type', 'LineString', 'MultiLineString'], ['==', 'name', '']]);
     }
 });

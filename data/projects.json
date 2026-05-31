@@ -1,270 +1,2781 @@
 {
-    "type": "FeatureCollection",
-    "features": [
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Ontario Line",
-                "agency": "Metrolinx",
-                "category": "Subway",
-                "status": "construction",
-                "statusText": "Under Construction",
-                "timeline": "Expected completion: 2031",
-                "description": "A 15.6-kilometre stand-alone rapid transit line that will connect the Ontario Science Centre to Exhibition/Ontario Place.",
-                "color": "#0072bc",
-                "milestones": [
-                    "Early works started (2022)",
-                    "Major construction commenced (2023)"
-                ],
-                "source_url": "https://www.metrolinx.com/en/projects-and-programs/ontario-line"
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [-79.418, 43.633],
-                    [-79.395, 43.645],
-                    [-79.379, 43.653],
-                    [-79.360, 43.658],
-                    [-79.345, 43.665],
-                    [-79.340, 43.685],
-                    [-79.335, 43.715]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Eglinton Crosstown LRT",
-                "agency": "TTC",
-                "category": "LRT",
-                "status": "opened",
-                "statusText": "Recently Opened",
-                "timeline": "Opened February 8, 2026",
-                "description": "A 19-kilometre light rail transit line across Eglinton Avenue from Mount Dennis to Kennedy Station.",
-                "color": "#ef3e42",
-                "milestones": [
-                    "Construction started (2011)",
-                    "Substantial completion (Dec 2025)",
-                    "Officially opened (Feb 8, 2026)"
-                ],
-                "source_url": "https://www.ttc.ca/about-the-ttc/projects-and-plans/Eglinton-Crosstown-LRT"
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [-79.485, 43.688],
-                    [-79.444, 43.700],
-                    [-79.398, 43.705],
-                    [-79.344, 43.716],
-                    [-79.263, 43.732]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Scarborough Subway Extension",
-                "agency": "Metrolinx",
-                "category": "Subway",
-                "status": "construction",
-                "statusText": "Under Construction",
-                "timeline": "Expected completion: 2030",
-                "description": "A 7.8-kilometre extension of TTC Line 2 Bloor-Danforth from Kennedy Station to Sheppard Avenue East.",
-                "color": "#00923f",
-                "milestones": [
-                    "Early works started (2021)",
-                    "Tunneling started (2022)"
-                ],
-                "source_url": "https://www.metrolinx.com/en/projects-and-programs/scarborough-subway-extension"
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [-79.263, 43.732],
-                    [-79.255, 43.755],
-                    [-79.245, 43.775],
-                    [-79.235, 43.795]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Yonge North Subway Extension",
-                "agency": "Metrolinx",
-                "category": "Subway",
-                "status": "approved",
-                "statusText": "Approved",
-                "timeline": "Expected completion: 2030",
-                "description": "An 8-kilometre extension of TTC Line 1 Yonge-University from Finch Station to Richmond Hill Centre.",
-                "color": "#ffcb00",
-                "milestones": [
-                    "Preliminary design complete",
-                    "Awaiting contract award"
-                ],
-                "source_url": "https://www.metrolinx.com/en/projects-and-programs/yonge-north-subway-extension"
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [-79.414, 43.781],
-                    [-79.418, 43.801],
-                    [-79.426, 43.821],
-                    [-79.428, 43.841]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Finch West LRT",
-                "agency": "TTC",
-                "category": "LRT",
-                "status": "opened",
-                "statusText": "Recently Opened",
-                "timeline": "Opened December 7, 2025",
-                "description": "An 11-kilometre light rail transit line on Finch Avenue West from Humber College to Finch West Station.",
-                "color": "#808080",
-                "milestones": [
-                    "Main construction started (2019)",
-                    "Vehicle testing complete (2024)",
-                    "Opened (Dec 2025)"
-                ],
-                "source_url": "https://www.metrolinx.com/en/projects-and-programs/finch-west-lrt"
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [-79.605, 43.729],
-                    [-79.545, 43.745],
-                    [-79.487, 43.761]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Eglinton Crosstown West Extension",
-                "agency": "Metrolinx",
-                "category": "LRT",
-                "status": "construction",
-                "statusText": "Under Construction",
-                "timeline": "Expected completion: 2031",
-                "description": "A 9.2-kilometre extension of the Eglinton Crosstown LRT from Mount Dennis to Renforth Drive.",
-                "color": "#ef3e42",
-                "milestones": [
-                    "Tunneling started (2022)",
-                    "Elevated guide-way construction (Ongoing)"
-                ],
-                "source_url": "https://www.metrolinx.com/en/projects-and-programs/eglinton-crosstown-west-extension"
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [-79.485, 43.688],
-                    [-79.525, 43.685],
-                    [-79.555, 43.675],
-                    [-79.595, 43.665]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Waterfront East LRT",
-                "agency": "City of Toronto",
-                "category": "LRT",
-                "status": "planning",
-                "statusText": "Planning",
-                "timeline": "In design 2024-2026",
-                "description": "Proposed LRT extension from Union Station to the East Bayfront and future Port Lands redevelopment.",
-                "color": "#0072bc",
-                "milestones": [
-                    "10% design complete",
-                    "Funding commitment from City (Ongoing)"
-                ],
-                "source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/transit-projects/waterfront-east-light-rail-transit/"
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [-79.378, 43.646],
-                    [-79.370, 43.640],
-                    [-79.360, 43.645],
-                    [-79.345, 43.648]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "GO Expansion (Lakeshore East)",
-                "agency": "Metrolinx",
-                "category": "GO",
-                "status": "planning",
-                "statusText": "Planning",
-                "timeline": "Ongoing",
-                "description": "Two-way, all-day service every 15 minutes or better on core segments of the GO network.",
-                "color": "#00853e",
-                "milestones": [
-                    "Electrification contracts awarded",
-                    "New third track construction (Ongoing)"
-                ],
-                "source_url": "https://www.metrolinx.com/en/projects-and-programs/go-expansion"
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [-79.378, 43.646],
-                    [-79.350, 43.660],
-                    [-79.263, 43.732],
-                    [-79.120, 43.830]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Bloor-Yonge Capacity Improvement",
-                "agency": "TTC",
-                "category": "Station",
-                "status": "construction",
-                "statusText": "Under Construction",
-                "timeline": "Expected completion: 2030",
-                "description": "Major expansion of Toronto's busiest interchange station to improve passenger flow.",
-                "color": "#004a99",
-                "milestones": [
-                    "Preliminary work started (2024)",
-                    "Platform expansion (Upcoming)"
-                ],
-                "source_url": "https://www.ttc.ca/about-the-ttc/projects-and-plans/Bloor-Yonge-Station-Capacity-Improvement"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-79.385, 43.670]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Exhibition Station Hub",
-                "agency": "Metrolinx",
-                "category": "Station",
-                "status": "construction",
-                "statusText": "Under Construction",
-                "timeline": "Connecting GO and Ontario Line",
-                "description": "Major transit hub serving Exhibition Place and future Ontario Line.",
-                "color": "#0072bc",
-                "milestones": [
-                    "New north platform construction",
-                    "Ontario Line early works"
-                ],
-                "source_url": "https://www.metrolinx.com/en/projects-and-programs/ontario-line/exhibition-station"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [-79.418, 43.633]
-            }
-        }
-    ]
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kitchener Extension",
+        "agency": "Metrolinx / GO Transit",
+        "category": "Regional Rail",
+        "status": "planning",
+        "statusText": "Planned Expansion",
+        "timeline": "Alignment from Metrolinx Frequent Rapid Transit Network open data.",
+        "description": "GO rail expansion alignment from Metrolinx open data. Verify current project status and phasing.",
+        "color": "#cf4b41",
+        "milestones": [
+          "Alignment published in Metrolinx FRTN open data",
+          "Confirm project delivery status with Metrolinx"
+        ],
+        "source_url": "https://www.metrolinx.com/en/about-us/open-data"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -79.822428539,
+            43.675130716
+          ],
+          [
+            -79.9304967,
+            43.653112002
+          ],
+          [
+            -80.0031778,
+            43.628000103
+          ],
+          [
+            -80.0411927,
+            43.634261302
+          ],
+          [
+            -80.150255698,
+            43.619718201
+          ],
+          [
+            -80.185502998,
+            43.582148102
+          ],
+          [
+            -80.209175798,
+            43.563009302
+          ],
+          [
+            -80.233897997,
+            43.554607402
+          ],
+          [
+            -80.257507298,
+            43.538120602
+          ],
+          [
+            -80.398753496,
+            43.484145092
+          ],
+          [
+            -80.493289099,
+            43.455858054
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gormley Extension",
+        "agency": "Metrolinx / GO Transit",
+        "category": "Regional Rail",
+        "status": "planning",
+        "statusText": "Planned Expansion",
+        "timeline": "Alignment from Metrolinx Frequent Rapid Transit Network open data.",
+        "description": "GO rail expansion alignment from Metrolinx open data. Verify current project status and phasing.",
+        "color": "#cf4b41",
+        "milestones": [
+          "Alignment published in Metrolinx FRTN open data",
+          "Confirm project delivery status with Metrolinx"
+        ],
+        "source_url": "https://www.metrolinx.com/en/about-us/open-data"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -79.426255761,
+            43.873679193
+          ],
+          [
+            -79.434487304,
+            43.887500003
+          ],
+          [
+            -79.427785304,
+            43.909509003
+          ],
+          [
+            -79.405283302,
+            43.932400004
+          ],
+          [
+            -79.398390303,
+            43.935480003
+          ],
+          [
+            -79.398379696,
+            43.940017332
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lakeshore West Line - West Harbour Extension",
+        "agency": "Metrolinx / GO Transit",
+        "category": "Regional Rail",
+        "status": "planning",
+        "statusText": "Planned Expansion",
+        "timeline": "Alignment from Metrolinx Frequent Rapid Transit Network open data.",
+        "description": "GO rail expansion alignment from Metrolinx open data. Verify current project status and phasing.",
+        "color": "#cf4b41",
+        "milestones": [
+          "Alignment published in Metrolinx FRTN open data",
+          "Confirm project delivery status with Metrolinx"
+        ],
+        "source_url": "https://www.metrolinx.com/en/about-us/open-data"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -79.864797689,
+            43.266446687
+          ],
+          [
+            -79.883872499,
+            43.271111204
+          ],
+          [
+            -79.890652024,
+            43.280525834
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Barrie Extension",
+        "agency": "Metrolinx / GO Transit",
+        "category": "Regional Rail",
+        "status": "planning",
+        "statusText": "Planned Expansion",
+        "timeline": "Alignment from Metrolinx Frequent Rapid Transit Network open data.",
+        "description": "GO rail expansion alignment from Metrolinx open data. Verify current project status and phasing.",
+        "color": "#cf4b41",
+        "milestones": [
+          "Alignment published in Metrolinx FRTN open data",
+          "Confirm project delivery status with Metrolinx"
+        ],
+        "source_url": "https://www.metrolinx.com/en/about-us/open-data"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -79.556175154,
+            44.11731544
+          ],
+          [
+            -79.557561504,
+            44.121169303
+          ],
+          [
+            -79.553016804,
+            44.130432202
+          ],
+          [
+            -79.553843305,
+            44.144365402
+          ],
+          [
+            -79.543523204,
+            44.176186802
+          ],
+          [
+            -79.543459105,
+            44.193535003
+          ],
+          [
+            -79.539134804,
+            44.212359503
+          ],
+          [
+            -79.556675104,
+            44.245608102
+          ],
+          [
+            -79.555292805,
+            44.257985301
+          ],
+          [
+            -79.558497606,
+            44.268325303
+          ],
+          [
+            -79.555759005,
+            44.277016002
+          ],
+          [
+            -79.560048405,
+            44.294132002
+          ],
+          [
+            -79.572135906,
+            44.300376702
+          ],
+          [
+            -79.576547206,
+            44.307435803
+          ],
+          [
+            -79.619927606,
+            44.338992601
+          ],
+          [
+            -79.624572005,
+            44.349059903
+          ],
+          [
+            -79.631505405,
+            44.354121901
+          ],
+          [
+            -79.660235506,
+            44.370271601
+          ],
+          [
+            -79.686864088,
+            44.373367813
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Niagara Extension",
+        "agency": "Metrolinx / GO Transit",
+        "category": "Regional Rail",
+        "status": "planning",
+        "statusText": "Planned Expansion",
+        "timeline": "Alignment from Metrolinx Frequent Rapid Transit Network open data.",
+        "description": "GO rail expansion alignment from Metrolinx open data. Verify current project status and phasing.",
+        "color": "#cf4b41",
+        "milestones": [
+          "Alignment published in Metrolinx FRTN open data",
+          "Confirm project delivery status with Metrolinx"
+        ],
+        "source_url": "https://www.metrolinx.com/en/about-us/open-data"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -79.758503429,
+            43.241473289
+          ],
+          [
+            -79.613939149,
+            43.207227102
+          ],
+          [
+            -79.514383848,
+            43.187213003
+          ],
+          [
+            -79.189876697,
+            43.137364507
+          ],
+          [
+            -79.179491099,
+            43.137190407
+          ],
+          [
+            -79.146285198,
+            43.145365306
+          ],
+          [
+            -79.103714599,
+            43.142190208
+          ],
+          [
+            -79.087472697,
+            43.133656306
+          ],
+          [
+            -79.074418499,
+            43.111499406
+          ],
+          [
+            -79.063061591,
+            43.108988535
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Confederation Extension",
+        "agency": "Metrolinx / GO Transit",
+        "category": "Regional Rail",
+        "status": "planning",
+        "statusText": "Planned Expansion",
+        "timeline": "Alignment from Metrolinx Frequent Rapid Transit Network open data.",
+        "description": "GO rail expansion alignment from Metrolinx open data. Verify current project status and phasing.",
+        "color": "#cf4b41",
+        "milestones": [
+          "Alignment published in Metrolinx FRTN open data",
+          "Confirm project delivery status with Metrolinx"
+        ],
+        "source_url": "https://www.metrolinx.com/en/about-us/open-data"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -79.864797689,
+            43.266446687
+          ],
+          [
+            -79.758503429,
+            43.241473289
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "O-Train Stage 2 (Confederation Line Extension)",
+        "agency": "City of Ottawa / OC Transpo",
+        "category": "Light Rail",
+        "status": "construction",
+        "statusText": "Under Construction",
+        "timeline": "Stage 2 extensions under construction.",
+        "description": "Track alignment for Ottawa's Confederation Line Stage 2 extension from City of Ottawa open data.",
+        "color": "#b64b40",
+        "milestones": [
+          "Stage 2 extension alignment published",
+          "Construction ongoing per City of Ottawa"
+        ],
+        "source_url": "https://open.ottawa.ca/datasets/city-of-ottawa::o-train-line-stage-2/about"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              -75.78148179608579,
+              45.362623321184955
+            ],
+            [
+              -75.77241555806395,
+              45.35965696378318
+            ],
+            [
+              -75.76376219203492,
+              45.35040160432224
+            ]
+          ],
+          [
+            [
+              -75.76245390002818,
+              45.34930598282495
+            ],
+            [
+              -75.77261045834463,
+              45.359738060316666
+            ],
+            [
+              -75.78102164306465,
+              45.36093304209281
+            ],
+            [
+              -75.78213758690444,
+              45.368392651753965
+            ]
+          ],
+          [
+            [
+              -75.75992121057739,
+              45.39223517354976
+            ],
+            [
+              -75.7598776368962,
+              45.39241940293844
+            ]
+          ],
+          [
+            [
+              -75.76051397200244,
+              45.39200761153111
+            ],
+            [
+              -75.76078557044207,
+              45.39178614068127
+            ]
+          ],
+          [
+            [
+              -75.78178793295146,
+              45.36460039424265
+            ],
+            [
+              -75.78195245220923,
+              45.36542517679184
+            ]
+          ],
+          [
+            [
+              -75.78188805288482,
+              45.364360959453755
+            ],
+            [
+              -75.78184840394312,
+              45.3643475695507
+            ]
+          ],
+          [
+            [
+              -75.77093771174228,
+              45.35788771638347
+            ],
+            [
+              -75.77131037783789,
+              45.358390384947434
+            ]
+          ],
+          [
+            [
+              -75.77077241364518,
+              45.357379454439936
+            ],
+            [
+              -75.77041499375655,
+              45.356705153022
+            ]
+          ],
+          [
+            [
+              -75.80619941633711,
+              45.34588512805589
+            ],
+            [
+              -75.80571550287672,
+              45.34586539493784
+            ]
+          ],
+          [
+            [
+              -75.80544005335945,
+              45.345916705450065
+            ],
+            [
+              -75.80495502059821,
+              45.34592781861777
+            ]
+          ],
+          [
+            [
+              -75.83183174702482,
+              45.34179754626812
+            ],
+            [
+              -75.83155285067183,
+              45.341766675643626
+            ]
+          ],
+          [
+            [
+              -75.83108008889735,
+              45.34189121374671
+            ],
+            [
+              -75.83057358640082,
+              45.34196988779295
+            ]
+          ],
+          [
+            [
+              -75.83252490416605,
+              45.34154618999652
+            ],
+            [
+              -75.83302173540024,
+              45.34146184089827
+            ]
+          ],
+          [
+            [
+              -75.76033198680061,
+              45.34621825210376
+            ],
+            [
+              -75.76062389255556,
+              45.346334675728336
+            ]
+          ],
+          [
+            [
+              -75.76143375702186,
+              45.347656308225204
+            ],
+            [
+              -75.76194944479218,
+              45.34847940401435
+            ]
+          ],
+          [
+            [
+              -75.76297709861258,
+              45.34989507627904
+            ],
+            [
+              -75.76341024827629,
+              45.35014089676193
+            ]
+          ],
+          [
+            [
+              -75.7638553652962,
+              45.35054746286116
+            ],
+            [
+              -75.76437996435412,
+              45.35097280727474
+            ]
+          ],
+          [
+            [
+              -75.76457540092902,
+              45.351286134169165
+            ],
+            [
+              -75.7647956328024,
+              45.35142608085909
+            ]
+          ],
+          [
+            [
+              -75.76535222266422,
+              45.35200139579902
+            ],
+            [
+              -75.76526231927059,
+              45.351853394614
+            ]
+          ],
+          [
+            [
+              -75.76625343321851,
+              45.35263928845961
+            ],
+            [
+              -75.7659715733234,
+              45.35237069444677
+            ]
+          ],
+          [
+            [
+              -75.7671622381302,
+              45.353271031612664
+            ],
+            [
+              -75.76742565830749,
+              45.35338148402009
+            ]
+          ],
+          [
+            [
+              -75.76804584350154,
+              45.35391816184297
+            ],
+            [
+              -75.76844305426566,
+              45.35418733495779
+            ]
+          ],
+          [
+            [
+              -75.76936085670323,
+              45.35526665514971
+            ],
+            [
+              -75.76950152299527,
+              45.35541765216986
+            ]
+          ],
+          [
+            [
+              -75.77001335699303,
+              45.356223379426694
+            ],
+            [
+              -75.77020445021351,
+              45.356377172819435
+            ]
+          ],
+          [
+            [
+              -75.77140307050048,
+              45.35855812298567
+            ],
+            [
+              -75.77206608916393,
+              45.35932415048208
+            ]
+          ],
+          [
+            [
+              -75.77310194909447,
+              45.360075863347
+            ],
+            [
+              -75.7734011842038,
+              45.3601500463832
+            ]
+          ],
+          [
+            [
+              -75.77423805202754,
+              45.36048817833163
+            ],
+            [
+              -75.77408499706944,
+              45.36039117860872
+            ]
+          ],
+          [
+            [
+              -75.77548462168943,
+              45.36068616326607
+            ],
+            [
+              -75.77531475655742,
+              45.36062056517574
+            ]
+          ],
+          [
+            [
+              -75.77676177180021,
+              45.360657132142364
+            ],
+            [
+              -75.77733691277099,
+              45.36051698041809
+            ]
+          ],
+          [
+            [
+              -75.77800296324851,
+              45.3604430718022
+            ],
+            [
+              -75.7783222783994,
+              45.36032822678771
+            ]
+          ],
+          [
+            [
+              -75.77925358431234,
+              45.36034513719862
+            ],
+            [
+              -75.77907900751664,
+              45.36025287374337
+            ]
+          ],
+          [
+            [
+              -75.78040802545362,
+              45.36068626173227
+            ],
+            [
+              -75.78021697086069,
+              45.36056528199733
+            ]
+          ],
+          [
+            [
+              -75.78116317173934,
+              45.36139005520695
+            ],
+            [
+              -75.78141956798943,
+              45.36148400333321
+            ]
+          ],
+          [
+            [
+              -75.78144780922533,
+              45.36184383361587
+            ],
+            [
+              -75.78155363795231,
+              45.362378855140506
+            ]
+          ],
+          [
+            [
+              -75.76851833308649,
+              45.3543414892858
+            ],
+            [
+              -75.76873484323963,
+              45.35448277742915
+            ]
+          ],
+          [
+            [
+              -75.7723264883069,
+              45.35960591126583
+            ],
+            [
+              -75.77240327539909,
+              45.359593897528285
+            ]
+          ],
+          [
+            [
+              -75.77448288695992,
+              45.36054123220411
+            ],
+            [
+              -75.77449037621444,
+              45.36052402771473
+            ]
+          ],
+          [
+            [
+              -75.77574051039136,
+              45.36069417626766
+            ],
+            [
+              -75.77633303106795,
+              45.36064058349891
+            ]
+          ],
+          [
+            [
+              -75.77750879821409,
+              45.360533845326565
+            ],
+            [
+              -75.77750216235907,
+              45.36051646725621
+            ]
+          ],
+          [
+            [
+              -75.7795038558488,
+              45.360373835210375
+            ],
+            [
+              -75.78029903196189,
+              45.36048568384593
+            ]
+          ],
+          [
+            [
+              -75.78152938523628,
+              45.36280019737738
+            ],
+            [
+              -75.7817145262197,
+              45.36345267882365
+            ]
+          ],
+          [
+            [
+              -75.782091123343,
+              45.36572684229924
+            ],
+            [
+              -75.78200853493071,
+              45.366324138034926
+            ]
+          ],
+          [
+            [
+              -75.76256029469378,
+              45.349470298266205
+            ],
+            [
+              -75.76257410718961,
+              45.34946467132267
+            ]
+          ],
+          [
+            [
+              -75.76092393075876,
+              45.34683141122661
+            ],
+            [
+              -75.76123567401014,
+              45.347324552552045
+            ]
+          ],
+          [
+            [
+              -75.84208112556465,
+              45.3388915176561
+            ],
+            [
+              -75.79622019623751,
+              45.346753193456784
+            ],
+            [
+              -75.78107703408337,
+              45.354663926824074
+            ],
+            [
+              -75.7821107955494,
+              45.37003957998461
+            ],
+            [
+              -75.76922433433963,
+              45.384178896091875
+            ],
+            [
+              -75.7572511193123,
+              45.39413606446349
+            ],
+            [
+              -75.73619336308926,
+              45.40329916565926
+            ],
+            [
+              -75.75490131517526,
+              45.39539045054314
+            ],
+            [
+              -75.78208337537367,
+              45.37022904400394
+            ],
+            [
+              -75.78110961148715,
+              45.35469167072645
+            ],
+            [
+              -75.79664340155105,
+              45.34670648371532
+            ],
+            [
+              -75.84157616457712,
+              45.33911867716581
+            ]
+          ],
+          [
+            [
+              -75.76959552899481,
+              45.38363840611167
+            ],
+            [
+              -75.76852087172547,
+              45.38485334891798
+            ]
+          ],
+          [
+            [
+              -75.84134440642035,
+              45.33919740999936
+            ],
+            [
+              -75.84094441986198,
+              45.33942221872819
+            ]
+          ],
+          [
+            [
+              -75.84032572317636,
+              45.33974106319722
+            ],
+            [
+              -75.83958669176853,
+              45.34023845955985
+            ]
+          ],
+          [
+            [
+              -75.83937600269843,
+              45.34034246470895
+            ],
+            [
+              -75.83920531381129,
+              45.34047828056274
+            ]
+          ],
+          [
+            [
+              -75.83827302424312,
+              45.34074793811823
+            ],
+            [
+              -75.83751907990326,
+              45.340842435749664
+            ]
+          ],
+          [
+            [
+              -75.83700895090792,
+              45.340867627303936
+            ],
+            [
+              -75.8365072391268,
+              45.34093741562357
+            ]
+          ],
+          [
+            [
+              -75.83574413017439,
+              45.34098679468933
+            ],
+            [
+              -75.83600132412846,
+              45.340984910552066
+            ]
+          ],
+          [
+            [
+              -75.83448732600647,
+              45.34114741274051
+            ],
+            [
+              -75.83351135945088,
+              45.341360227057535
+            ]
+          ],
+          [
+            [
+              -75.82958530933257,
+              45.34215151037816
+            ],
+            [
+              -75.82983913280768,
+              45.342122291059354
+            ]
+          ],
+          [
+            [
+              -75.82836121102753,
+              45.34240550383518
+            ],
+            [
+              -75.82812539338397,
+              45.34247788214247
+            ]
+          ],
+          [
+            [
+              -75.827137102841,
+              45.342659479736454
+            ],
+            [
+              -75.82665575137578,
+              45.3427812794173
+            ]
+          ],
+          [
+            [
+              -75.82590792546131,
+              45.342898700764415
+            ],
+            [
+              -75.82566772134422,
+              45.34296344744722
+            ]
+          ],
+          [
+            [
+              -75.82466394294744,
+              45.34309553307705
+            ],
+            [
+              -75.82492034818068,
+              45.3430817024826
+            ]
+          ],
+          [
+            [
+              -75.82340755739443,
+              45.34324826037231
+            ],
+            [
+              -75.82265324205036,
+              45.3433427127904
+            ]
+          ],
+          [
+            [
+              -75.82214293968019,
+              45.34336631340042
+            ],
+            [
+              -75.82164077335152,
+              45.343434535959766
+            ]
+          ],
+          [
+            [
+              -75.82113128305835,
+              45.34346259411448
+            ],
+            [
+              -75.82062830195773,
+              45.34352634887797
+            ]
+          ],
+          [
+            [
+              -75.81961178185695,
+              45.34359684612165
+            ],
+            [
+              -75.81986899198067,
+              45.343595320697474
+            ]
+          ],
+          [
+            [
+              -75.81835220009816,
+              45.34374487268465
+            ],
+            [
+              -75.81761063903448,
+              45.34388121199945
+            ]
+          ],
+          [
+            [
+              -75.8171075474411,
+              45.34394621894998
+            ],
+            [
+              -75.81662371033748,
+              45.34406316813496
+            ]
+          ],
+          [
+            [
+              -75.81588190672869,
+              45.34419855393463
+            ],
+            [
+              -75.81564800519163,
+              45.344273982024234
+            ]
+          ],
+          [
+            [
+              -75.81466460597538,
+              45.34446842295993
+            ],
+            [
+              -75.81491763264482,
+              45.34443590906043
+            ]
+          ],
+          [
+            [
+              -75.81344586522268,
+              45.34473327950337
+            ],
+            [
+              -75.81271194702545,
+              45.34488782956459
+            ]
+          ],
+          [
+            [
+              -75.81220932525093,
+              45.344955090609446
+            ],
+            [
+              -75.81172777076647,
+              45.34507687461815
+            ]
+          ],
+          [
+            [
+              -75.81098557279725,
+              45.34521130399926
+            ],
+            [
+              -75.80874901118324,
+              45.34556929253482
+            ]
+          ],
+          [
+            [
+              -75.80849209031703,
+              45.34557770354107
+            ],
+            [
+              -75.80774219827742,
+              45.34568916661848
+            ]
+          ],
+          [
+            [
+              -75.80723241513347,
+              45.34571716430788
+            ],
+            [
+              -75.80672951577954,
+              45.34578222534121
+            ]
+          ],
+          [
+            [
+              -75.80343988790403,
+              45.34608297657082
+            ],
+            [
+              -75.80269294862676,
+              45.34620403525151
+            ]
+          ],
+          [
+            [
+              -75.80218257978125,
+              45.34622352202318
+            ],
+            [
+              -75.80167468040445,
+              45.34626389904726
+            ]
+          ],
+          [
+            [
+              -75.8009097694316,
+              45.34623043725271
+            ],
+            [
+              -75.80065357709908,
+              45.34624648692084
+            ]
+          ],
+          [
+            [
+              -75.79963261213426,
+              45.346224415390296
+            ],
+            [
+              -75.79988888441684,
+              45.3462403905603
+            ]
+          ],
+          [
+            [
+              -75.79836267998678,
+              45.346323091019265
+            ],
+            [
+              -75.79762004094476,
+              45.346456531268736
+            ]
+          ],
+          [
+            [
+              -75.79663432138014,
+              45.34664335630722
+            ],
+            [
+              -75.79736672771276,
+              45.3464848638265
+            ]
+          ],
+          [
+            [
+              -75.79591157732672,
+              45.34682388366275
+            ],
+            [
+              -75.79568956409415,
+              45.34691556670873
+            ]
+          ],
+          [
+            [
+              -75.79476815222577,
+              45.34722599546744
+            ],
+            [
+              -75.79456690624592,
+              45.347339031761344
+            ]
+          ],
+          [
+            [
+              -75.79371752489028,
+              45.3477387250388
+            ],
+            [
+              -75.79353889669267,
+              45.34786928684474
+            ]
+          ],
+          [
+            [
+              -75.79272556472937,
+              45.348305132122434
+            ],
+            [
+              -75.79255141373511,
+              45.3484386623991
+            ]
+          ],
+          [
+            [
+              -75.791781173956,
+              45.34891132532932
+            ],
+            [
+              -75.79161699605804,
+              45.34905093950195
+            ]
+          ],
+          [
+            [
+              -75.7908510583108,
+              45.34952741426828
+            ],
+            [
+              -75.78956039843646,
+              45.35039916810352
+            ]
+          ],
+          [
+            [
+              -75.78869756301282,
+              45.350782202388594
+            ],
+            [
+              -75.78934337085371,
+              45.35049554039061
+            ]
+          ],
+          [
+            [
+              -75.78778100384359,
+              45.35109872535013
+            ],
+            [
+              -75.7875679297464,
+              45.351200355170015
+            ]
+          ],
+          [
+            [
+              -75.78667783135218,
+              45.35155320938199
+            ],
+            [
+              -75.78669983828001,
+              45.35157529840482
+            ]
+          ],
+          [
+            [
+              -75.78565791292469,
+              45.35209490372321
+            ],
+            [
+              -75.78587998724271,
+              45.35200338246998
+            ]
+          ],
+          [
+            [
+              -75.78464449290996,
+              45.35264182369338
+            ],
+            [
+              -75.78486656992291,
+              45.35255030458712
+            ]
+          ],
+          [
+            [
+              -75.78363773480136,
+              45.35319563381854
+            ],
+            [
+              -75.7838556490213,
+              45.35309918595673
+            ]
+          ],
+          [
+            [
+              -75.78266642690883,
+              45.35377823520323
+            ],
+            [
+              -75.78288643600003,
+              45.35368411330787
+            ]
+          ],
+          [
+            [
+              -75.78165478555836,
+              45.35432681743832
+            ],
+            [
+              -75.7818765661273,
+              45.35423493366039
+            ]
+          ],
+          [
+            [
+              -75.78071297744144,
+              45.35493356099739
+            ],
+            [
+              -75.78042076895424,
+              45.35543104481762
+            ]
+          ],
+          [
+            [
+              -75.78031497436324,
+              45.355783590484656
+            ],
+            [
+              -75.78050573430878,
+              45.35649015043841
+            ]
+          ],
+          [
+            [
+              -75.78053488643637,
+              45.35667034907496
+            ],
+            [
+              -75.78078358053119,
+              45.357368820730954
+            ]
+          ],
+          [
+            [
+              -75.78079122878752,
+              45.357550039159655
+            ],
+            [
+              -75.78093695169629,
+              45.35826253009896
+            ]
+          ],
+          [
+            [
+              -75.78106608541671,
+              45.35933871814685
+            ],
+            [
+              -75.78107100638782,
+              45.35915738425416
+            ]
+          ],
+          [
+            [
+              -75.7812001437015,
+              45.36023357106222
+            ],
+            [
+              -75.78125869050183,
+              45.36041017889287
+            ]
+          ],
+          [
+            [
+              -75.7819878691876,
+              45.36650491881009
+            ],
+            [
+              -75.78206461944885,
+              45.367223098876856
+            ]
+          ],
+          [
+            [
+              -75.78212813842428,
+              45.36875322381897
+            ],
+            [
+              -75.78220394275954,
+              45.36947155772713
+            ]
+          ],
+          [
+            [
+              -75.7821732428347,
+              45.369651388745126
+            ],
+            [
+              -75.78193945179042,
+              45.37034347133602
+            ]
+          ],
+          [
+            [
+              -75.78089833312222,
+              45.37136804311588
+            ],
+            [
+              -75.78165891421541,
+              45.37064513459581
+            ]
+          ],
+          [
+            [
+              -75.78028664149917,
+              45.371943965599655
+            ],
+            [
+              -75.77983585251656,
+              45.37238092040767
+            ]
+          ],
+          [
+            [
+              -75.77852642953087,
+              45.373486367399906
+            ],
+            [
+              -75.77967441088695,
+              45.37252038138847
+            ]
+          ],
+          [
+            [
+              -75.77793751559017,
+              45.37407527602742
+            ],
+            [
+              -75.77768584717343,
+              45.37438927263624
+            ]
+          ],
+          [
+            [
+              -75.77724144790744,
+              45.37482960289289
+            ],
+            [
+              -75.77671133588859,
+              45.37544532573179
+            ]
+          ],
+          [
+            [
+              -75.77654536136008,
+              45.375583925375814
+            ],
+            [
+              -75.77657746894496,
+              45.3755986434554
+            ]
+          ],
+          [
+            [
+              -75.77584925504979,
+              45.37633824221402
+            ],
+            [
+              -75.77559721832378,
+              45.37665211141312
+            ]
+          ],
+          [
+            [
+              -75.77514300226835,
+              45.37708731854399
+            ],
+            [
+              -75.77487352564943,
+              45.37739383045962
+            ]
+          ],
+          [
+            [
+              -75.77439362137014,
+              45.37781529748465
+            ],
+            [
+              -75.77381158133798,
+              45.378407280044314
+            ]
+          ],
+          [
+            [
+              -75.77363400057598,
+              45.3785385459536
+            ],
+            [
+              -75.77274808653436,
+              45.37941982114596
+            ]
+          ],
+          [
+            [
+              -75.77206981807066,
+              45.37995966873798
+            ],
+            [
+              -75.77163954121924,
+              45.38040695627106
+            ]
+          ],
+          [
+            [
+              -75.77130995023983,
+              45.38068282920514
+            ],
+            [
+              -75.77072772066315,
+              45.38127473315892
+            ]
+          ],
+          [
+            [
+              -75.7700820754173,
+              45.38224226752551
+            ],
+            [
+              -75.77005651475422,
+              45.3824227374702
+            ]
+          ],
+          [
+            [
+              -75.7697983883489,
+              45.38311953970236
+            ],
+            [
+              -75.7697006220016,
+              45.3834734605252
+            ]
+          ],
+          [
+            [
+              -75.76786624692006,
+              45.3854064405909
+            ],
+            [
+              -75.7680487612296,
+              45.38527856478201
+            ]
+          ],
+          [
+            [
+              -75.76707937573177,
+              45.38611512708999
+            ],
+            [
+              -75.76710954565058,
+              45.38613176102456
+            ]
+          ],
+          [
+            [
+              -75.76629248388222,
+              45.38682380785906
+            ],
+            [
+              -75.76632265559768,
+              45.38684044221601
+            ]
+          ],
+          [
+            [
+              -75.76550557316807,
+              45.387532482267126
+            ],
+            [
+              -75.76553574488351,
+              45.38754911767729
+            ]
+          ],
+          [
+            [
+              -75.76471864179265,
+              45.38824115220676
+            ],
+            [
+              -75.7647488144064,
+              45.388257787408364
+            ]
+          ],
+          [
+            [
+              -75.76393169155261,
+              45.3889498157851
+            ],
+            [
+              -75.76396186416639,
+              45.388966451409026
+            ]
+          ],
+          [
+            [
+              -75.76314472154965,
+              45.38965847426385
+            ],
+            [
+              -75.7631748932651,
+              45.38967511031009
+            ]
+          ],
+          [
+            [
+              -75.76235773088545,
+              45.39036712701201
+            ],
+            [
+              -75.7623879034992,
+              45.3903837622188
+            ]
+          ],
+          [
+            [
+              -75.7615707213566,
+              45.39107577402945
+            ],
+            [
+              -75.76160089397035,
+              45.39109240965854
+            ]
+          ],
+          [
+            [
+              -75.75894158877689,
+              45.39303213964256
+            ],
+            [
+              -75.7589684960146,
+              45.39305135606197
+            ]
+          ],
+          [
+            [
+              -75.75801663485134,
+              45.39365160944546
+            ],
+            [
+              -75.75804231319376,
+              45.39367164446569
+            ]
+          ],
+          [
+            [
+              -75.75704739757555,
+              45.39423631180995
+            ],
+            [
+              -75.75707154069713,
+              45.39425727266506
+            ]
+          ],
+          [
+            [
+              -75.75603573736043,
+              45.39478419136444
+            ],
+            [
+              -75.75605827878587,
+              45.39480602001479
+            ]
+          ],
+          [
+            [
+              -75.75498447132279,
+              45.39529372388762
+            ],
+            [
+              -75.75500534727169,
+              45.395316360405054
+            ]
+          ],
+          [
+            [
+              -75.75389896779471,
+              45.395766932768055
+            ],
+            [
+              -75.75391881247766,
+              45.395790025165624
+            ]
+          ],
+          [
+            [
+              -75.752806427763,
+              45.396232969310724
+            ],
+            [
+              -75.75282627154765,
+              45.39625606088708
+            ]
+          ],
+          [
+            [
+              -75.75171386976501,
+              45.39669899380965
+            ],
+            [
+              -75.75173371354963,
+              45.396722086457125
+            ]
+          ],
+          [
+            [
+              -75.75061867431333,
+              45.39716128020921
+            ],
+            [
+              -75.75063773476703,
+              45.39718469815353
+            ]
+          ],
+          [
+            [
+              -75.74949857396871,
+              45.39759301407794
+            ],
+            [
+              -75.74951693643145,
+              45.39761670686399
+            ]
+          ],
+          [
+            [
+              -75.74839174263916,
+              45.39804298923521
+            ],
+            [
+              -75.74841145886302,
+              45.3980661368418
+            ]
+          ],
+          [
+            [
+              -75.74729655617064,
+              45.398505981195946
+            ],
+            [
+              -75.74731627149619,
+              45.39852912861288
+            ]
+          ],
+          [
+            [
+              -75.74620135083748,
+              45.398968962424576
+            ],
+            [
+              -75.74622106616303,
+              45.39899211028258
+            ]
+          ],
+          [
+            [
+              -75.74510612843636,
+              45.39943193355197
+            ],
+            [
+              -75.74512584286357,
+              45.3994550812203
+            ]
+          ],
+          [
+            [
+              -75.74401088896722,
+              45.39989489331688
+            ],
+            [
+              -75.74403060339445,
+              45.39991804142631
+            ]
+          ],
+          [
+            [
+              -75.74291563063348,
+              45.40035784298087
+            ],
+            [
+              -75.74293534506069,
+              45.40038099026987
+            ]
+          ],
+          [
+            [
+              -75.74182035433343,
+              45.400820781282675
+            ],
+            [
+              -75.74184006876065,
+              45.40084392901278
+            ]
+          ],
+          [
+            [
+              -75.74072506006706,
+              45.401283709484
+            ],
+            [
+              -75.74074477449429,
+              45.40130685702444
+            ]
+          ],
+          [
+            [
+              -75.73962974873271,
+              45.40174662695419
+            ],
+            [
+              -75.73964946226161,
+              45.401769774935715
+            ]
+          ],
+          [
+            [
+              -75.73854121249222,
+              45.40221817595736
+            ],
+            [
+              -75.73856201298264,
+              45.40224084817541
+            ]
+          ],
+          [
+            [
+              -75.7374786222921,
+              45.4027178261145
+            ],
+            [
+              -75.7374998449907,
+              45.40274030323823
+            ]
+          ],
+          [
+            [
+              -75.73639839636633,
+              45.40319670732138
+            ],
+            [
+              -75.73641812965818,
+              45.40321984777085
+            ]
+          ],
+          [
+            [
+              -75.84072553905482,
+              45.33951646410613
+            ],
+            [
+              -75.84054184795225,
+              45.33964267034096
+            ]
+          ],
+          [
+            [
+              -75.8389829358627,
+              45.3405680903662
+            ],
+            [
+              -75.83852852038129,
+              45.34073058996247
+            ]
+          ],
+          [
+            [
+              -75.83549226951821,
+              45.34101682785406
+            ],
+            [
+              -75.83474330184501,
+              45.341129392885136
+            ]
+          ],
+          [
+            [
+              -75.8293422907937,
+              45.342206626545625
+            ],
+            [
+              -75.82861503450263,
+              45.34237628717305
+            ]
+          ],
+          [
+            [
+              -75.82787336833606,
+              45.342511414345935
+            ],
+            [
+              -75.82763574957036,
+              45.342579474404
+            ]
+          ],
+          [
+            [
+              -75.82441473591459,
+              45.343134042157025
+            ],
+            [
+              -75.82366462288941,
+              45.34324348644701
+            ]
+          ],
+          [
+            [
+              -75.81935985562373,
+              45.34362665818032
+            ],
+            [
+              -75.81860888470744,
+              45.34373311002702
+            ]
+          ],
+          [
+            [
+              -75.81442306067358,
+              45.344526688689875
+            ],
+            [
+              -75.81369979469898,
+              45.34470490944936
+            ]
+          ],
+          [
+            [
+              -75.80444558689891,
+              45.345956925484856
+            ],
+            [
+              -75.80369639913847,
+              45.34606976480429
+            ]
+          ],
+          [
+            [
+              -75.79937787058094,
+              45.34623983433681
+            ],
+            [
+              -75.79861979848235,
+              45.34631683114633
+            ]
+          ],
+          [
+            [
+              -75.79433908091345,
+              45.34742210373809
+            ],
+            [
+              -75.79435330573597,
+              45.34743704695828
+            ]
+          ],
+          [
+            [
+              -75.79141349979841,
+              45.34916104155438
+            ],
+            [
+              -75.79105892667094,
+              45.34942059263197
+            ]
+          ],
+          [
+            [
+              -75.7873309389031,
+              45.3512695808911
+            ],
+            [
+              -75.78690700056433,
+              45.35147073436152
+            ]
+          ],
+          [
+            [
+              -75.7854591094641,
+              45.35220786148352
+            ],
+            [
+              -75.78506925590214,
+              45.352440921217834
+            ]
+          ],
+          [
+            [
+              -75.7834471131964,
+              45.35331568807841
+            ],
+            [
+              -75.78327129403067,
+              45.353447408033915
+            ]
+          ],
+          [
+            [
+              -75.78145634591546,
+              45.35444009963205
+            ],
+            [
+              -75.78147190743113,
+              45.354454364916734
+            ]
+          ],
+          [
+            [
+              -75.78074942388915,
+              45.371514163781015
+            ],
+            [
+              -75.78061942868439,
+              45.371670103534335
+            ]
+          ],
+          [
+            [
+              -75.77752522840063,
+              45.37453032519342
+            ],
+            [
+              -75.77754663345722,
+              45.37454013785039
+            ]
+          ],
+          [
+            [
+              -75.77470228968828,
+              45.37752855032245
+            ],
+            [
+              -75.77457119764054,
+              45.377684028003365
+            ]
+          ],
+          [
+            [
+              -75.77257226018212,
+              45.37955129040505
+            ],
+            [
+              -75.77259188657446,
+              45.37956280521373
+            ]
+          ],
+          [
+            [
+              -75.76926113652019,
+              45.38412116646885
+            ],
+            [
+              -75.76899137244037,
+              45.38442704592012
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Green Line Phase 1",
+        "agency": "City of Calgary",
+        "category": "Light Rail",
+        "status": "construction",
+        "statusText": "Under Construction",
+        "timeline": "Alignment from City of Calgary Green Line open data.",
+        "description": "Green Line LRT alignment from City of Calgary open data. Verify current phase status.",
+        "color": "#c25a4b",
+        "milestones": [
+          "Alignment published in City of Calgary open data",
+          "Confirm phase delivery status with the City"
+        ],
+        "source_url": "https://data.calgary.ca/Transportation-Transit/Green-Line-Alignment/wyyc-63e5"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              -113.999773,
+              50.9694599
+            ],
+            [
+              -114.0013581,
+              50.9654884
+            ]
+          ],
+          [
+            [
+              -114.0292727,
+              51.0140921
+            ],
+            [
+              -114.0305426,
+              51.0164742
+            ]
+          ],
+          [
+            [
+              -113.9614497,
+              50.9357901
+            ],
+            [
+              -113.9732406,
+              50.9366766
+            ],
+            [
+              -113.9817511,
+              50.9497957
+            ],
+            [
+              -113.998125,
+              50.9531835
+            ],
+            [
+              -114.0012769,
+              50.9665825
+            ],
+            [
+              -113.9942765,
+              50.9765259
+            ],
+            [
+              -113.9949867,
+              50.984279
+            ],
+            [
+              -114.0120969,
+              51.0020595
+            ],
+            [
+              -114.0293149,
+              51.0078778
+            ],
+            [
+              -114.0305426,
+              51.0164742
+            ]
+          ],
+          [
+            [
+              -114.0013581,
+              50.9654884
+            ],
+            [
+              -113.997756,
+              50.9527698
+            ],
+            [
+              -113.9818722,
+              50.9498187
+            ],
+            [
+              -113.9731295,
+              50.9365755
+            ],
+            [
+              -113.9614758,
+              50.9357546
+            ]
+          ],
+          [
+            [
+              -113.999773,
+              50.9694599
+            ],
+            [
+              -114.0013581,
+              50.9654884
+            ]
+          ],
+          [
+            [
+              -114.0625513,
+              51.0667547
+            ],
+            [
+              -114.0625047,
+              51.0562797
+            ],
+            [
+              -114.0680731,
+              51.0539977
+            ],
+            [
+              -114.0679252,
+              51.0436156
+            ],
+            [
+              -114.0431975,
+              51.0430023
+            ],
+            [
+              -114.0359536,
+              51.0378079
+            ],
+            [
+              -114.0384455,
+              51.0319484
+            ],
+            [
+              -114.0288339,
+              51.0129186
+            ],
+            [
+              -114.0296379,
+              51.0081575
+            ],
+            [
+              -114.0121247,
+              51.0020209
+            ],
+            [
+              -113.9950468,
+              50.9842692
+            ],
+            [
+              -113.9942848,
+              50.9766866
+            ],
+            [
+              -113.999773,
+              50.9694599
+            ]
+          ],
+          [
+            [
+              -114.0305426,
+              51.0164742
+            ],
+            [
+              -114.0383841,
+              51.0319538
+            ],
+            [
+              -114.0356379,
+              51.0374221
+            ],
+            [
+              -114.0397774,
+              51.0417058
+            ],
+            [
+              -114.0677838,
+              51.0436592
+            ],
+            [
+              -114.0679916,
+              51.0538866
+            ],
+            [
+              -114.0624294,
+              51.0563245
+            ],
+            [
+              -114.0624253,
+              51.0667548
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Green Line Phase 2",
+        "agency": "City of Calgary",
+        "category": "Light Rail",
+        "status": "planning",
+        "statusText": "Planned / In Development",
+        "timeline": "Alignment from City of Calgary Green Line open data.",
+        "description": "Green Line LRT alignment from City of Calgary open data. Verify current phase status.",
+        "color": "#c25a4b",
+        "milestones": [
+          "Alignment published in City of Calgary open data",
+          "Confirm phase delivery status with the City"
+        ],
+        "source_url": "https://data.calgary.ca/Transportation-Transit/Green-Line-Alignment/wyyc-63e5"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [
+              -113.9614758,
+              50.9357546
+            ],
+            [
+              -113.9586526,
+              50.9327268
+            ],
+            [
+              -113.9581872,
+              50.9164999
+            ],
+            [
+              -113.9495825,
+              50.9089994
+            ]
+          ],
+          [
+            [
+              -113.9495825,
+              50.9089994
+            ],
+            [
+              -113.9410125,
+              50.8828111
+            ],
+            [
+              -113.9537817,
+              50.8782566
+            ],
+            [
+              -113.9526241,
+              50.8689307
+            ]
+          ],
+          [
+            [
+              -113.9454092,
+              50.9002594
+            ],
+            [
+              -113.9504177,
+              50.9111317
+            ],
+            [
+              -113.958127,
+              50.9165091
+            ],
+            [
+              -113.9585913,
+              50.9327333
+            ],
+            [
+              -113.9614497,
+              50.9357901
+            ]
+          ],
+          [
+            [
+              -113.9537767,
+              50.8709555
+            ],
+            [
+              -113.9536369,
+              50.8783305
+            ],
+            [
+              -113.9409944,
+              50.8825528
+            ],
+            [
+              -113.9454092,
+              50.9002594
+            ]
+          ],
+          [
+            [
+              -113.9454092,
+              50.9002594
+            ],
+            [
+              -113.9483223,
+              50.9028469
+            ]
+          ],
+          [
+            [
+              -114.0671704,
+              51.1396557
+            ],
+            [
+              -114.0709133,
+              51.1399157
+            ],
+            [
+              -114.0690907,
+              51.1423209
+            ]
+          ],
+          [
+            [
+              -114.0713226,
+              51.1374091
+            ],
+            [
+              -114.0671703,
+              51.1396167
+            ]
+          ],
+          [
+            [
+              -114.0624253,
+              51.0667548
+            ],
+            [
+              -114.0624109,
+              51.1112014
+            ],
+            [
+              -114.0712523,
+              51.1205293
+            ],
+            [
+              -114.0713226,
+              51.1374091
+            ]
+          ],
+          [
+            [
+              -114.0713226,
+              51.1374091
+            ],
+            [
+              -114.0690907,
+              51.1423209
+            ]
+          ],
+          [
+            [
+              -114.070458,
+              51.1594182
+            ],
+            [
+              -114.0631208,
+              51.1491647
+            ],
+            [
+              -114.0712678,
+              51.1398215
+            ],
+            [
+              -114.0714663,
+              51.1214356
+            ],
+            [
+              -114.062489,
+              51.1113152
+            ],
+            [
+              -114.0625513,
+              51.0667547
+            ]
+          ],
+          [
+            [
+              -113.9524971,
+              50.868971
+            ],
+            [
+              -113.9537767,
+              50.8709555
+            ]
+          ],
+          [
+            [
+              -113.9525606,
+              50.8689509
+            ],
+            [
+              -113.9537767,
+              50.8709555
+            ]
+          ],
+          [
+            [
+              -114.0690907,
+              51.1423209
+            ],
+            [
+              -114.0630548,
+              51.1491254
+            ],
+            [
+              -114.070303,
+              51.1594535
+            ]
+          ],
+          [
+            [
+              -114.0712219,
+              51.1808189
+            ],
+            [
+              -114.0712314,
+              51.194043
+            ]
+          ],
+          [
+            [
+              -114.0712314,
+              51.194043
+            ],
+            [
+              -114.0712865,
+              51.201239
+            ]
+          ],
+          [
+            [
+              -114.070303,
+              51.1594535
+            ],
+            [
+              -114.0677759,
+              51.1683757
+            ],
+            [
+              -114.0712219,
+              51.1808189
+            ]
+          ],
+          [
+            [
+              -114.0713839,
+              51.1808028
+            ],
+            [
+              -114.0678379,
+              51.16837
+            ],
+            [
+              -114.070458,
+              51.1594182
+            ]
+          ],
+          [
+            [
+              -114.0713487,
+              51.2012389
+            ],
+            [
+              -114.0713934,
+              51.1940309
+            ]
+          ],
+          [
+            [
+              -114.0713934,
+              51.1940309
+            ],
+            [
+              -114.0713839,
+              51.1808028
+            ]
+          ],
+          [
+            [
+              -114.0694032,
+              51.1755401
+            ],
+            [
+              -114.0707097,
+              51.1779921
+            ]
+          ],
+          [
+            [
+              -114.0707669,
+              51.1779768
+            ],
+            [
+              -114.0694938,
+              51.1756339
+            ]
+          ],
+          [
+            [
+              -113.9495825,
+              50.9089994
+            ],
+            [
+              -113.9496743,
+              50.9069251
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ontario Line",
+        "agency": "Metrolinx",
+        "category": "Subway",
+        "status": "construction",
+        "statusText": "Under Construction",
+        "timeline": "Construction and early works underway.",
+        "description": "Toronto relief subway now under construction. Point marker used until an exact alignment layer is added.",
+        "color": "#cf4b41",
+        "milestones": [
+          "Project underway",
+          "See official project page for latest updates"
+        ],
+        "source_url": "https://www.metrolinx.com/en/projects-and-programs/ontario-line"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.379,
+          43.653
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Eglinton Crosstown LRT",
+        "agency": "Metrolinx",
+        "category": "Light Rail",
+        "status": "construction",
+        "statusText": "Under Construction",
+        "timeline": "Construction underway.",
+        "description": "Midtown Toronto LRT corridor. Point marker used until an exact alignment layer is added.",
+        "color": "#d95a4f",
+        "milestones": [
+          "Project underway",
+          "See official project page for latest updates"
+        ],
+        "source_url": "https://www.metrolinx.com/en/projects-and-programs/eglinton-crosstown-lrt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.387,
+          43.704
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Finch West LRT",
+        "agency": "Metrolinx",
+        "category": "Light Rail",
+        "status": "construction",
+        "statusText": "Under Construction",
+        "timeline": "Construction underway.",
+        "description": "Northwest Toronto LRT corridor. Point marker used until an exact alignment layer is added.",
+        "color": "#c25a4b",
+        "milestones": [
+          "Project underway",
+          "See official project page for latest updates"
+        ],
+        "source_url": "https://www.metrolinx.com/en/projects-and-programs/finch-west-lrt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.533,
+          43.767
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Scarborough Subway Extension",
+        "agency": "Metrolinx",
+        "category": "Subway",
+        "status": "planning",
+        "statusText": "Planning",
+        "timeline": "Planning and procurement.",
+        "description": "Extension of Line 2 into Scarborough. Point marker used until an exact alignment layer is added.",
+        "color": "#b64b40",
+        "milestones": [
+          "Planning and procurement ongoing",
+          "See official project page for latest updates"
+        ],
+        "source_url": "https://www.metrolinx.com/en/projects-and-programs/scarborough-subway-extension"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.272,
+          43.771
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Yonge North Subway Extension",
+        "agency": "Metrolinx",
+        "category": "Subway",
+        "status": "planning",
+        "statusText": "Planning",
+        "timeline": "Planning and procurement.",
+        "description": "North extension of the Yonge subway corridor. Point marker used until an exact alignment layer is added.",
+        "color": "#b64b40",
+        "milestones": [
+          "Planning and procurement ongoing",
+          "See official project page for latest updates"
+        ],
+        "source_url": "https://www.metrolinx.com/en/projects-and-programs/yonge-north-subway-extension"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.43,
+          43.857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hazel McCallion Line",
+        "agency": "Metrolinx / Mississauga",
+        "category": "Light Rail",
+        "status": "construction",
+        "statusText": "Under Construction",
+        "timeline": "Construction underway.",
+        "description": "Mississauga east-west LRT line. Point marker used until an exact alignment layer is added.",
+        "color": "#cf4b41",
+        "milestones": [
+          "Project underway",
+          "See official project page for latest updates"
+        ],
+        "source_url": "https://www.metrolinx.com/en/projects-and-programs/hazel-mccallion-lrt/latest-updates"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.712,
+          43.594
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Durham-Scarborough BRT",
+        "agency": "Metrolinx",
+        "category": "BRT",
+        "status": "planning",
+        "statusText": "Planning",
+        "timeline": "Project planning / corridor study.",
+        "description": "Proposed bus rapid transit corridor east of Toronto. Point marker used until an exact alignment layer is added.",
+        "color": "#f39c12",
+        "milestones": [
+          "Planning and corridor work",
+          "See official project page for latest updates"
+        ],
+        "source_url": "https://www.metrolinx.com/en/projects-and-programs/durham-scarborough-brt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.24,
+          43.761
+        ]
+      }
+    }
+  ]
 }

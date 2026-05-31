@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0] - 2026-05-31
+
+### Added
+- Expanded the dataset with real Canadian transit construction and planning projects.
+- Added Toronto-area projects plus Durham-Scarborough BRT coverage.
+- Added source links for each featured project.
+
+### Changed
+- Reworked the layout into a magazine-style framed map.
+- Updated the map to handle both corridor lines and point-based projects.
+- Refined the filtering and project list interactions for the new dataset.
+
+### Fixed
+- Corrected broken source links in the dataset.
+- Improved fit-to-data behavior for multi-geometry features.
+
 ## [1.1.0] - 2026-02-12
 
 ### Added
