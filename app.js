@@ -12,7 +12,6 @@ const closeBtn = document.getElementById('close-sidebar');
 const openBtn = document.getElementById('open-sidebar');
 const backBtn = document.getElementById('back-to-list');
 
-const agencyFilter = document.getElementById('agency-filter');
 const statusFilter = document.getElementById('status-filter');
 
 const tokenPrompt = document.getElementById('token-prompt');
@@ -203,18 +202,6 @@ function fitMapToData(data) {
 }
 
 function populateFilters(projects) {
-    const agencies = Array.from(
-        new Set(projects.map(p => p.properties.agency).filter(Boolean))
-    ).sort();
-
-    agencyFilter.innerHTML = '<option value="all">All Agencies</option>';
-    agencies.forEach(agency => {
-        const option = document.createElement('option');
-        option.value = agency;
-        option.textContent = agency;
-        agencyFilter.appendChild(option);
-    });
-
     const statusMap = new Map();
     projects.forEach(project => {
         const status = project.properties.status;
@@ -247,7 +234,6 @@ function renderProjectList(projects) {
         item.innerHTML = `
             <div class="project-item-header">
                 <h3>${project.properties.name}</h3>
-                <span class="agency-tag">${project.properties.agency}</span>
             </div>
             <div class="project-item-status status-${project.properties.status}">${project.properties.statusText}</div>
         `;
@@ -303,13 +289,11 @@ function showProjectDetails(props) {
 }
 
 function applyFilters() {
-    const agency = agencyFilter.value;
     const status = statusFilter.value;
 
     const filtered = allProjects.filter(p => {
-        const agencyMatch = agency === 'all' || p.properties.agency === agency;
         const statusMatch = status === 'all' || p.properties.status === status;
-        return agencyMatch && statusMatch;
+        return statusMatch;
     });
 
     renderProjectList(filtered);
@@ -317,7 +301,6 @@ function applyFilters() {
     // Update map visibility via filter
     if (map) {
         const lineFilters = ['all', ['in', '$type', 'LineString', 'MultiLineString']];
-        if (agency !== 'all') lineFilters.push(['==', 'agency', agency]);
         if (status !== 'all') lineFilters.push(['==', 'status', status]);
         map.setFilter('transit-lines', lineFilters);
 
@@ -330,9 +313,8 @@ function applyFilters() {
             );
 
             if (p) {
-                const agencyMatch = agency === 'all' || p.properties.agency === agency;
                 const statusMatch = status === 'all' || p.properties.status === status;
-                marker.getElement().style.display = (agencyMatch && statusMatch) ? 'block' : 'none';
+                marker.getElement().style.display = statusMatch ? 'block' : 'none';
             }
         });
     }
@@ -359,7 +341,6 @@ function flyToProject(project) {
     map.flyTo({ center: coords, zoom: 12, essential: true });
 }
 
-agencyFilter.addEventListener('change', applyFilters);
 statusFilter.addEventListener('change', applyFilters);
 
 backBtn.addEventListener('click', () => {

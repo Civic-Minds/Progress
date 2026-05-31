@@ -157,7 +157,7 @@ h1 {
 /* Filters */
 .filter-group {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 10px;
 }
 
@@ -206,16 +206,6 @@ h1 {
     font-size: 0.95rem;
     margin: 0;
     font-weight: 700;
-}
-
-.agency-tag {
-    font-size: 0.65rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    padding: 2px 6px;
-    border-radius: 4px;
-    background: var(--st-dark-blue);
-    color: white;
 }
 
 .project-item-status {
