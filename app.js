@@ -18,9 +18,9 @@ const tokenPrompt = document.getElementById('token-prompt');
 const tokenInput = document.getElementById('token-input');
 const tokenSubmit = document.getElementById('token-submit');
 
-const DEFAULT_TITLE = 'Transit Construction';
+const DEFAULT_TITLE = 'TRANSIT.CONSTRUCTION';
 const STATUS_ORDER = ['planning', 'approved', 'construction', 'opened', 'delayed'];
-const MAP_BACKGROUND_COLOR = '#f8f1e6';
+const MAP_BACKGROUND_COLOR = '#ffffff';
 
 let map;
 let allProjects = [];

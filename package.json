@@ -1,5 +1,5 @@
 {
-    "name": "transit-construction-na",
+    "name": "transit.construction",
     "version": "1.3.0",
     "description": "Interactive transit construction map for North America.",
     "main": "app.js",
