@@ -14,9 +14,8 @@
 <body>
     <div id="frame" class="frame">
         <header class="masthead">
-            <div class="masthead-top">LIVE · UPDATED WEEKLY</div>
-            <div class="masthead-title">Mapping Canadian Transit Construction</div>
-            <div class="masthead-subtitle">A living index of major rail projects across Canada.</div>
+            <div class="masthead-top">TRANSIT ATLAS · NORTH AMERICA</div>
+            <div class="masthead-title">Transit Construction</div>
         </header>
         <div id="map"></div>
 
@@ -48,6 +47,8 @@
             </div>
         </div>
 
+        <button id="open-sidebar" class="sidebar-toggle hidden">Projects</button>
+
         <div id="legend" class="legend hidden">
             <h4>Status</h4>
             <div><span class="status-planning-dot" style="background-color: #4CAF50;"></span> Planning</div>
@@ -63,7 +64,7 @@
             <h2>Activate Map</h2>
             <p>Please enter your Mapbox Access Token to view the interactive transit map.</p>
             <input type="text" id="token-input"
-                placeholder="pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZnd3IifQ.ocUrlS_8G9GrS_asV6fsgA">
+                placeholder="Paste your Mapbox token here">
             <button id="token-submit">Launch Map</button>
             <p class="token-hint">Don't have one? Get it at <a href="https://mapbox.com" target="_blank">mapbox.com</a>
             </p>

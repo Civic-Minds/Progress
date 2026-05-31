@@ -9,6 +9,7 @@ const projectMilestones = document.getElementById('project-milestones');
 const projectTimeline = document.getElementById('project-timeline');
 const projectLink = document.getElementById('project-link');
 const closeBtn = document.getElementById('close-sidebar');
+const openBtn = document.getElementById('open-sidebar');
 const backBtn = document.getElementById('back-to-list');
 
 const agencyFilter = document.getElementById('agency-filter');
@@ -25,6 +26,16 @@ const MAP_BACKGROUND_COLOR = '#f8f1e6';
 let map;
 let allProjects = [];
 let markers = [];
+
+function showSidebar() {
+    sidebar.classList.add('open');
+    openBtn.classList.add('hidden');
+}
+
+function hideSidebar() {
+    sidebar.classList.remove('open');
+    openBtn.classList.remove('hidden');
+}
 
 // Check for saved token
 const savedToken = localStorage.getItem('mapbox_token');
@@ -73,7 +84,7 @@ function initializeMap(token) {
         // Show UI elements
         sidebar.classList.remove('hidden');
         document.getElementById('legend').classList.remove('hidden');
-        sidebar.classList.add('open'); // Show the list by default
+        showSidebar();
         map.addSource('transit-projects', {
             'type': 'geojson',
             'data': { type: 'FeatureCollection', features: [] }
@@ -284,7 +295,7 @@ function showProjectDetails(props) {
 
     projectList.classList.add('hidden');
     detailsView.classList.remove('hidden');
-    sidebar.classList.add('open');
+    showSidebar();
 
     if (map) {
         map.setFilter('transit-lines-hover', ['all', ['in', '$type', 'LineString', 'MultiLineString'], ['==', 'name', props.name]]);
@@ -361,8 +372,12 @@ backBtn.addEventListener('click', () => {
 });
 
 closeBtn.addEventListener('click', () => {
-    sidebar.classList.remove('open');
+    hideSidebar();
     if (map) {
         map.setFilter('transit-lines-hover', ['all', ['in', '$type', 'LineString', 'MultiLineString'], ['==', 'name', '']]);
     }
+});
+
+openBtn.addEventListener('click', () => {
+    showSidebar();
 });

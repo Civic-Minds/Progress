@@ -2633,13 +2633,13 @@
         "name": "Eglinton Crosstown LRT",
         "agency": "Metrolinx",
         "category": "Light Rail",
-        "status": "construction",
-        "statusText": "Under Construction",
-        "timeline": "Construction underway.",
+        "status": "opened",
+        "statusText": "Recently Opened",
+        "timeline": "Opened to riders.",
         "description": "Midtown Toronto LRT corridor. Point marker used until an exact alignment layer is added.",
         "color": "#d95a4f",
         "milestones": [
-          "Project underway",
+          "Opened to riders",
           "See official project page for latest updates"
         ],
         "source_url": "https://www.metrolinx.com/en/projects-and-programs/eglinton-crosstown-lrt"
@@ -2658,13 +2658,13 @@
         "name": "Finch West LRT",
         "agency": "Metrolinx",
         "category": "Light Rail",
-        "status": "construction",
-        "statusText": "Under Construction",
-        "timeline": "Construction underway.",
+        "status": "opened",
+        "statusText": "Recently Opened",
+        "timeline": "Opened to riders.",
         "description": "Northwest Toronto LRT corridor. Point marker used until an exact alignment layer is added.",
         "color": "#c25a4b",
         "milestones": [
-          "Project underway",
+          "Opened to riders",
           "See official project page for latest updates"
         ],
         "source_url": "https://www.metrolinx.com/en/projects-and-programs/finch-west-lrt"
