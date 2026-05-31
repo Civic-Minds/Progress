@@ -246,11 +246,11 @@ function renderProjectList(projects) {
 }
 
 function showProjectDetails(props) {
-    projectName.textContent = props.name;
-    projectStatus.textContent = props.statusText;
+    projectName.textContent = props.name.toUpperCase();
+    projectStatus.textContent = (props.statusText || props.status).toUpperCase();
     projectStatus.className = `status-badge status-${props.status}`;
     projectDescription.textContent = props.description;
-    projectTimeline.innerHTML = `<strong>Timeline:</strong> ${props.timeline}`;
+    projectTimeline.innerHTML = `<strong style="font-family: 'Space Mono', monospace;">TIMELINE:</strong> ${props.timeline}`;
 
     // Handle milestones
     projectMilestones.innerHTML = '';
@@ -259,7 +259,7 @@ function showProjectDetails(props) {
         if (typeof milestones === 'string') milestones = JSON.parse(milestones);
 
         const h4 = document.createElement('h4');
-        h4.textContent = 'Key Milestones';
+        h4.textContent = 'KEY MILESTONES';
         projectMilestones.appendChild(h4);
 
         const ul = document.createElement('ul');
@@ -349,6 +349,20 @@ backBtn.addEventListener('click', () => {
     detailsView.classList.add('hidden');
     if (map) {
         map.setFilter('transit-lines-hover', ['all', ['in', '$type', 'LineString', 'MultiLineString'], ['==', 'name', '']]);
+    }
+});
+
+closeBtn.addEventListener('click', () => {
+    hideSidebar();
+    if (map) {
+        map.setFilter('transit-lines-hover', ['all', ['in', '$type', 'LineString', 'MultiLineString'], ['==', 'name', '']]);
+    }
+});
+
+openBtn.addEventListener('click', () => {
+    showSidebar();
+});
+ame', '']]);
     }
 });
 

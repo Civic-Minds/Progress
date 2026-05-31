@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.0] - 2026-05-31
+
+### Changed
+- **Modern Brutalist Redesign**: Completely overhauled the UI aesthetic to match a high-utility "digital ledger" style (inspired by cadtech.fyi).
+- **Typography**: Switched to a monospace-heavy typographic system using *Space Mono* for technical data and *Inter* for body text.
+- **Visuals**: Implemented a high-contrast monochrome palette, sharp 1px black borders, and solid offset shadows.
+- **Basemap**: Updated the Mapbox style to a stark white background with simplified features to prioritize transit data.
+- **Header**: Redesigned the masthead with a live pulsing indicator and technical metadata (MMXXVI).
+
 ## [1.2.2] - 2026-05-31
 
 ### Fixed
