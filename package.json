@@ -1,5 +1,5 @@
 {
-    "name": "transit-atlas",
+    "name": "transit-index",
     "version": "1.3.0",
     "description": "Interactive transit construction map for North America.",
     "main": "app.js",

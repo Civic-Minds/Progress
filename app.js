@@ -18,7 +18,7 @@ const tokenPrompt = document.getElementById('token-prompt');
 const tokenInput = document.getElementById('token-input');
 const tokenSubmit = document.getElementById('token-submit');
 
-const DEFAULT_TITLE = 'TRANSIT ATLAS';
+const DEFAULT_TITLE = 'TRANSIT INDEX';
 const STATUS_ORDER = ['planning', 'approved', 'construction', 'opened', 'delayed'];
 const MAP_BACKGROUND_COLOR = '#ffffff';
 
